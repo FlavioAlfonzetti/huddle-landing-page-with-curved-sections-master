@@ -1,7 +1,7 @@
 $breakpoints-up: (
   "medium": 576px,
   "large": 900px,
-  "xlarge": 1440px,
+  "xlarge": 1441px,
 );
 
 @mixin breakpoint($size) {
@@ -280,6 +280,20 @@ $breakpoints-up: (
             }
           }
         }
+      }
+    }
+  }
+}
+
+@mixin xlarge {
+  @include breakpoint(xlarge) {
+    .container {
+      .fantasy {
+        display: none;
+      }
+
+      .numbers {
+        margin-bottom: 4rem;
       }
     }
   }

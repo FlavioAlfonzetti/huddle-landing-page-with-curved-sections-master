@@ -13,10 +13,6 @@ body {
   font-family: var(--ff-body);
   font-size: 0.9rem;
 
-  .container {
-    max-width: 1440px;
-  }
-
   h1,
   h2,
   h3,
@@ -27,6 +23,8 @@ body {
   }
 
   .container {
+    /* max-width: 1440px; */
+
     /* NAVBAR */
     nav {
       display: flex;
@@ -348,4 +346,5 @@ body {
     }
   }
   @include responsive.large;
+  @include responsive.xlarge;
 }
